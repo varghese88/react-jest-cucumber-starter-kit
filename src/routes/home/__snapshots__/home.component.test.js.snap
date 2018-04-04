@@ -1,0 +1,50 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should render home page on load 1`] = `
+<div
+  className="flex-column full-height"
+>
+  <div
+    className="flex-center flex-basis-20"
+  >
+    <i
+      className="material-icons scan-img-size"
+    >
+      nfc
+    </i>
+  </div>
+  <div
+    className="flex-center flex-basis-5"
+  >
+    Scan a Reciept
+  </div>
+  <div
+    className="flex-center flex-basis-20"
+  >
+    <div
+      className="flex full-width"
+    >
+      <input
+        className="input-txt"
+        name="lname"
+        type="text"
+      />
+      <button
+        id="test"
+        onClick={[Function]}
+      >
+        test
+      </button>
+    </div>
+  </div>
+  <div
+    className="flex-center flex-basis-55"
+  >
+    <i
+      className="material-icons logo-size"
+    >
+      home
+    </i>
+  </div>
+</div>
+`;

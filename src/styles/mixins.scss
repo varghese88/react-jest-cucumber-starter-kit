@@ -1,0 +1,11 @@
+@mixin bg-color {
+    $colors-list: white black grey blue red;
+    @each $current-color in $colors-list {
+        .bg-#{$current-color} { 
+            background-color: $current-color;
+        }
+    }
+  }
+  
+@include bg-color;
+

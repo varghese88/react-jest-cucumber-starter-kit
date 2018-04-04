@@ -1,0 +1,83 @@
+@import "flexbox.scss";
+@import "color.scss";
+@import "mixins.scss";
+
+body{
+    padding: 0;
+    margin: 0;
+    border: none;
+    width: 100vw;
+    height: 100vh;
+    box-sizing: border-box;
+    font: 100% Helvetica, sans-serif;
+    background-color:$lime-light;
+}
+.material-icons{
+    &.logo-size{
+        font-size:4vw;
+    }
+    &.scan-img-size{
+        font-size:7vw;
+    }
+}
+.input-txt{
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    width: 100%;
+    background: #fff;
+    margin-bottom: 4%;
+    border: 1px solid #ccc;
+    padding: 3%;
+    color: #555;
+    font: 95% Arial, Helvetica, sans-serif;
+}
+.full-height{
+    height: 100%;
+}
+.full-width{
+    width: 100%;
+}
+.full-size{
+    @extend .full-height;
+    @extend .full-width;
+}
+.flex{
+    @include flexbox();
+}
+.flex-row {
+    @extend .flex;
+    min-width: 100%;
+}
+.flex-column{
+    @extend .flex-row;
+    @include flex-direction(column);
+}
+.flex-center{
+    @extend .flex;
+    @include align-items(center);
+    @include justify-content(center);
+}
+.flex-column-center{
+    @extend .flex-center;
+    @extend .flex-column;
+}
+.flex-row-center{
+    @extend .flex-row;
+    @extend .flex-center;
+}
+
+.bg-black {
+    background-color: black;
+}
+.bg-bisque{
+    background-color: bisque
+}
+.bg-grey{
+    background-color: grey
+}
