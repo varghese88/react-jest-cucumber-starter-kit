@@ -8,7 +8,7 @@ class Cart extends Component {
           <div className="flex-center flex-basis-20">
             <div className="flex full-width">
                 <input type="text" name="lname" className="input-txt"/>
-                <button onClick= {() => this.props.history.push('/cart/payment',{isModalOpen:true})}>test</button>
+                <button onClick= {() => this.props.displayPayment()}>test</button>
             </div>
           </div>
           <div className="flex-center flex-basis-55"><i className="material-icons logo-size">home</i></div>
