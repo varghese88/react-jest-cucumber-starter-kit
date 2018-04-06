@@ -9,11 +9,12 @@ import Home from "./routes/home/home.container";
 import Cart from "./routes/cart/cart.container";
 import PaymentModal from './routes/cart/modals/payment-modal.container';
 import SigatureModal from './routes/cart/modals/signature-modal.container';
-
+import {Loader } from './components/loader/loader.component';
 
 const Layout = () => (
   <Provider store={store}>
     <div className="flex-column-center full-height" >
+      <Loader />
       <Header className="flex-row flex-basis-10 full-width bg-red"/>
       <div className="flex-column-center flex-basis-90 bg-blue">
         <ConnectedRouter history={history}>

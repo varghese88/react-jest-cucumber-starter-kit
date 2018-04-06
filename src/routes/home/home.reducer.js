@@ -1,10 +1,10 @@
 
-export const homeData = (state = { post:[] }, action) => {
+export const homeData = (state = { posts:[] }, action) => {
     switch(action.type){
-        case '':
-         return {...state, posts:action.payload.response}
+        case 'POST_DATA_DATA_RECIEVED':
+         return {...state, posts:action.response}
         default:
-         return state;
+         return {...state};
     }
 }
 

@@ -1,6 +1,6 @@
 import { connect } from 'react-redux'
 import Home from './home.component';
-import {displayCartPage } from './home.actions';
+import {displayCartPage, getPostData } from './home.actions';
 
 const mapStateToProps = (state) =>{
     return {
@@ -8,4 +8,4 @@ const mapStateToProps = (state) =>{
     }
 }
 
-export default connect(mapStateToProps,{ displayCartPage })(Home);
+export default connect(mapStateToProps,{ displayCartPage, getPostData })(Home);

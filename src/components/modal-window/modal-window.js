@@ -5,18 +5,16 @@ import './modal-window.css';
 class ModalWindow extends Component {
     
     static modals = [];
-    static open = (id, callback) => (e) => {
-        e.preventDefault();
+    static open = (id, callback) =>  {
         let modal = ModalWindow.modals.find( obj => obj.props.id === id);
         modal.setState({isHidden : false});
-        callback && callback(e);
+        callback && callback();
     }
 
-    static close = (id,callback) => (e) => {
-        e.preventDefault();
+    static close = (id,callback) => {
         let modal = ModalWindow.modals.find( obj => obj.props.id === id);
         modal.setState({isHidden : true});
-        callback && callback(e);
+        callback && callback();
     }
     constructor(){
         super();

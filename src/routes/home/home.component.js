@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 class Home extends Component {
+  componentDidMount(){
+    this.props.getPostData();
+  }
   render() {
     const { displayCartPage } = this.props;
     return (
