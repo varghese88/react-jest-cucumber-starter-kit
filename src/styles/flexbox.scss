@@ -141,5 +141,26 @@
         .flex-basis-#{$i} { flex-basis: percentage($i/100); }
     }
   }
+
+  @mixin margin-padding-x {
+    @for $i from 1 through 20 {
+      .margin-#{$i} {margin:$i*1vw $i*1vh}
+      .padding-#{$i} {padding:$i*1vw $i*1vh}
+      .margin-top-#{$i} { margin-top: $i*0.5vh; }
+      .margin-bottom-#{$i} { margin-bottom:$i*0.5vh; }
+      .margin-right-#{$i} { margin-right: $i*0.5vw; }
+      .margin-left-#{$i} { margin-left: $i*0.5vw; }
+      .padding-top-#{$i} { padding-top: $i*0.5vh; }
+      .padding-bottom-#{$i} { padding-bottom: $i*0.5vh; }
+      .padding-right-#{$i} { padding-right: $i*0.5vw; }
+      .padding-left-#{$i} { padding-left: $i*0.5vw; }
+      .margin-hoz-#{$i}{ margin-left:$i*1vw; margin-right:$i*1vw;}
+      .margin-ver-#{$i}{ margin-top:$i*1vw; margin-bottom:$i*1vw;}
+      .padding-ver-#{$i}{ padding-top:$i*1vw; padding-bottom:$i*1vw;}
+      .padding-hoz-#{$i}{ padding-left:$i*1vw; padding-right:$i*1vw;}
+
+    }
+  }
   
   @include flex-basis-x;
+  @include margin-padding-x;

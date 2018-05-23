@@ -1,5 +1,5 @@
-import { homeData } from './routes/home/home.reducer';
+import { homeReducer } from './routes/lookup/lookup.reducer';
 
 export default {
-    homeData
+    homeReducer
 };

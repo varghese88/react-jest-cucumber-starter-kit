@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
-import Home from './home.component';
-import {displayCartPage, getPostData } from './home.actions';
+import Home from './lookup.component';
+import {displayCartPage, getPostData } from './lookup.actions';
 
 const mapStateToProps = (state) =>{
     return {
-        posts: state.homeData.posts
+        posts: state.homeReducer.posts
     }
 }
 

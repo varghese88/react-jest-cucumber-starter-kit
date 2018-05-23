@@ -1,5 +1,5 @@
 import React from 'react';
-import Home from './home.component';
+import Home from './lookup.component';
 import renderer from 'react-test-renderer';
 import {mount} from 'enzyme';
 
